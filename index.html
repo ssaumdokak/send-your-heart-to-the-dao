@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер с сердечками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .heart-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .heart-btn:hover {
+            background-color: #ff6666;
+        }
+        .heart-count {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="heart-btn" onclick="sendHeart()">Отправить сердца 💖</button>
+    <div class="heart-count">Отправлено сердец: <span id="heartCount">0</span></div>
+</div>
+
+<script>
+    let heartCount = 0;
+
+    function sendHeart() {
+        heartCount++;
+        document.getElementById('heartCount').innerText = heartCount;
+    }
+</script>
+
+</body>
+</html>
