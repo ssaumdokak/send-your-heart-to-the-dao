@@ -32,13 +32,13 @@ button {
 }
 
 button:hover {
-    background-color: #ff1a1a;
+    background-color: #267539;
 }
 
 #heartCount {
     font-size: 24px;
     font-weight: bold;
-    color: #ff4d4d;
+    color: #267539;
 }
 
 
